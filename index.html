@@ -13,7 +13,7 @@
         <input type="text" id="nama" name="nama" required />
 
         <label for="tujuan">Tujuan:</label>
-        <select id="tujuan" name="tujuan">
+        <select id="tujuan" name="tujuan" onchange="showHarga()">
           <option value="Jakarta">Jakarta</option>
           <option value="Surabaya">Surabaya</option>
           <option value="Bandung">Bandung</option>
@@ -21,7 +21,7 @@
         </select>
 
         <label for="harga">Harga Tiket:</label>
-        <input type="text" id="harga" name="harga" required />
+        <input type="text" id="harga" name="harga" readonly />
 
         <label for="jumlahTiket">Jumlah Tiket:</label>
         <select id="jumlahTiket" name="jumlahTiket">
@@ -49,7 +49,7 @@
 
         <div id="diskonField">
           <label for="diskon">Diskon (%):</label>
-          <input type="text" id="diskon" name="diskon" />
+          <input type="text" id="diskon" name="diskon" readonly />
         </div>
 
         <div id="totalBayarField">
