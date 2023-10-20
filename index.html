@@ -14,6 +14,7 @@
 
         <label for="tujuan">Tujuan:</label>
         <select id="tujuan" name="tujuan" onchange="showHarga()">
+          <option value="">Pilih Tujuan</option>
           <option value="Jakarta">Jakarta</option>
           <option value="Surabaya">Surabaya</option>
           <option value="Bandung">Bandung</option>
@@ -39,12 +40,14 @@
 
         <div>
           <label for="member">Member:</label>
+
           <input
             type="checkbox"
             id="member"
             name="member"
             onchange="showDiskon()"
           />
+          <span>ya</span>
         </div>
 
         <div id="diskonField">

@@ -48,5 +48,7 @@ function showHarga() {
     harga.value = 10000
   } else if (tujuan === 'Yogyakarta') {
     harga.value = 25000
+  } else {
+    harga.value = 0
   }
 }
