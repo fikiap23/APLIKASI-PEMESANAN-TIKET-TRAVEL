@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aplikasi Pemesanan Tiket Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="traveloka-logo.svg" alt="" width="200" />
+      <h3>Aplikasi Pemesanan Tiket Travel</h3>
+      <form id="travelForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="tujuan">Tujuan:</label>
+        <select id="tujuan" name="tujuan">
+          <option value="Jakarta">Jakarta</option>
+          <option value="Surabaya">Surabaya</option>
+          <option value="Bandung">Bandung</option>
+          <option value="Yogyakarta">Yogyakarta</option>
+        </select>
+
+        <label for="harga">Harga Tiket:</label>
+        <input type="text" id="harga" name="harga" required />
+
+        <label for="jumlahTiket">Jumlah Tiket:</label>
+        <select id="jumlahTiket" name="jumlahTiket">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <div>
+          <label for="member">Member:</label>
+          <input
+            type="checkbox"
+            id="member"
+            name="member"
+            onchange="showDiskon()"
+          />
+        </div>
+
+        <div id="diskonField">
+          <label for="diskon">Diskon (%):</label>
+          <input type="text" id="diskon" name="diskon" />
+        </div>
+
+        <div id="totalBayarField">
+          <label for="totalBayar">Total Bayar:</label>
+          <input type="text" id="totalBayar" name="totalBayar" readonly />
+        </div>
+
+        <button type="button" onclick="hitungTotal()">Hitung Total</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
